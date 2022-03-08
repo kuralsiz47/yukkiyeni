@@ -1,0 +1,139 @@
+{
+  "name": "Talia-WinampMusic",
+  "description": "Pytrogram ve Py-Tgcalls ile Python'da yazılmış doğru işlevlere sahip Telegram Müzik Botu.",
+  "logo": "https://telegra.ph/file/70eacddcef7a56310cf70.jpg",
+  "keywords": [
+  "python3",
+  "telegram",
+  "bot",
+  "Talia-WinampMusic",
+  "telegram-bot",
+  "pyrogram"
+  ],
+  "stack": "container",
+  "env": {
+    "API_ID": {
+      "description": "Bu değeri https://my.telegram.org",
+      "value": "",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Bu değeri https://my.telegram.org",
+      "value": "",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Botfather'dan Bot jetonu alınız",
+      "value": "",
+      "required": true
+    },
+    "DURATION_LIMIT": {
+      "description": "Playout için Süre Sınırı .. Example: 60",
+      "value": "60",
+      "required": true
+    },
+    "ASSISTANT_PREFIX": {
+      "description": "Yardımcı Komutlar.",
+      "value": ".",
+      "required": true
+    },
+    "MONGO_DB_URI": {
+      "description": "Mongo DB URL",
+      "value": "",
+      "required": true
+    },
+    "MUSIC_BOT_NAME": {
+      "description": "Music Bot'unuz için bir ad.",
+      "value": "",
+      "required": true
+    },    
+    "OWNER_ID": {
+      "description": "Sahibi olarak eklemek istediğiniz kullanıcı(lar)ın kullanıcı kimlikleri. Birden çok değer bir boşlukla ayrıştırılacaktır.",
+      "value": "",
+      "required": true
+    },
+    "STRING_SESSION1": {
+      "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+      "value": "",
+      "required": true
+    },
+    "STRING_SESSION2": {
+      "description": "A Pyrogram String Session. Leave blank if you dont want Multi-Assistant",
+      "value": "",
+      "required": false
+    },
+    "STRING_SESSION3": {
+      "description": "A Pyrogram String Session. Leave blank if you dont want Multi-Assistant",
+      "value": "",
+      "required": false
+    },
+    "STRING_SESSION4": {
+      "description": "A Pyrogram String Session. Leave blank if you dont want Multi-Assistant",
+      "value": "",
+      "required": false
+    },
+    "STRING_SESSION5": {
+      "description": "A Pyrogram String Session. Leave blank if you dont want Multi-Assistant",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "Your Heroku account's API key",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Your heroku app/bot's name",
+      "value": "",
+      "required": false
+    },
+    "LOG_GROUP_ID": {
+      "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
+      "value": "",
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "The user id(s) of user(s) whom you would like to add as a SUDO. Multiple values shall be seperated with a space.",
+      "value": "",
+      "required": true
+    },
+    "THUMB_LINK": {
+      "description": "Küçük resim olarak ayarlamak istediğiniz görüntünün telgraf resim bağlantısı.",
+      "value": "https://i.ibb.co/khRz42f/Turkish-Voice.jpg",
+      "required": true
+    },
+    "BOT_USERNAME": {
+      "description": "Your bot's username.",
+      "value": "",
+      "required": true
+    },
+    "LIMIT": {
+      "description": "Spotify'dan çalma listesi şarkıları için 20 şarkı sınırını etkinleştirmek için True'yi kullanın.",
+      "value": "TRUE",
+      "required": false
+    },
+    "PM_PERMIT": {
+      "description": "Use True to enable PM Permit. FALSE to disable.",
+      "value": "TRUE",
+      "required": false
+    }
+  },
+  "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
