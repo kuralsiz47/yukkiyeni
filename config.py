@@ -20,7 +20,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
-UPSTREAM_REPO = "https://github.com/Pulsar8806/pulsar"
+UPSTREAM_REPO = "https://github.com/kuralsiz47/yukkiyeni"
 UPSTREAM_BRANCH = "main"
 
 SUPPORT_CHANNEL = "https://t.me/Sohbetdestek"
