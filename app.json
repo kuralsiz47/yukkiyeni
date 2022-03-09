@@ -1,7 +1,7 @@
 {
   "name": "Talia-WinampMusic",
   "description": "Pytrogram ve Py-Tgcalls ile Python'da yazılmış doğru işlevlere sahip Telegram Müzik Botu.",
-  "logo": "https://telegra.ph/file/70eacddcef7a56310cf70.jpg",
+  "logo": "https://3.bp.blogspot.com/-ucokAe32B4Q/VPmLc71cU5I/AAAAAAAACS0/kQ3-waObd6o/s1600/winamp-131.png",
   "keywords": [
   "python3",
   "telegram",
@@ -99,7 +99,7 @@
     },
     "THUMB_LINK": {
       "description": "Küçük resim olarak ayarlamak istediğiniz görüntünün telgraf resim bağlantısı.",
-      "value": "https://i.ibb.co/khRz42f/Turkish-Voice.jpg",
+      "value": "https://3.bp.blogspot.com/-ucokAe32B4Q/VPmLc71cU5I/AAAAAAAACS0/kQ3-waObd6o/s1600/winamp-131.png",
       "required": true
     },
     "BOT_USERNAME": {
